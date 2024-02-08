@@ -8,9 +8,9 @@ const Navbar = (props) => {
   let setIsLoggedIn = props.setIsLoggedIn;
 
   return (
-    <div className='flex'>
+    <div className='flex justify-evenly'>
       <Link to="/">
-        <img src={logo} alt="Logo" width={300} height={300} loading="lazy"/>
+        <img src={logo} alt="Logo" width={200} height={300} loading="lazy"/>
       </Link>
       <nav >
         <ul className='flex gap-3'>
@@ -28,11 +28,7 @@ const Navbar = (props) => {
       <div className='flex ml-5 mr-3'>
         { !isLoggedIn && 
           <Link to="/login">
-               <button onClick={()=>{
-                setIsLoggedIn(false);
-                
-
-               }}>
+               <button>
                 Login
                </button>           
           </Link>
@@ -45,8 +41,10 @@ const Navbar = (props) => {
           </Link>
         }
          { isLoggedIn &&
-          <Link to="/logout">
-               <button>
+          <Link to="/logout" >
+               <button onClick={()=>{
+                setIsLoggedIn(false);
+               }} >
                 LogOut
                </button>           
           </Link>
