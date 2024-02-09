@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import { useState } from 'react';
+import LoginForm from './components/LoginForm';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
   <Routes>
     <Route path="/" element={<Home/>}/>
-    <Route path= "/login" element = {<Login/>}/>
+    <Route path= "/login" element = {<LoginForm/>}/>
     <Route path="/Signup" element = {<Signup/>}/>
     <Route path="/dashboard" element ={<Dashboard/>}/>
 

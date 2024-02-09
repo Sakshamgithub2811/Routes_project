@@ -9,6 +9,21 @@ const Template = ({title,desc1,desc2,image,formType,setIsLoggedIn}) => {
                 <span>{desc1}</span>
                 <span>{desc2}</span>
             </p>
+
+            {formType ==="signup"?(<SignupForm/>):(<LoginForm/>)}
+
+            <div>
+              <div></div>
+              <p>OR</p>
+              <div></div>
+            </div>
+
+            <button>
+              <p>Sign Up With Google</p>
+            </button>
+        </div>
+        <div>
+          <img/>
         </div>
       
     </div>
