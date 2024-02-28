@@ -6,7 +6,7 @@ const Login = ({setIsLoggedIn}) => {
   return (
     <div>
   <Template
-  title="join the millions learning to code with studyNotion for free."
+  title="Welcome Back"
   desc1="Build Skills for today , tomorrow, and beyond."
   desc2="Education to Future-proof your career."
   image={loginImg}
